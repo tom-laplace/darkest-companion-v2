@@ -4,7 +4,7 @@
 	let area: 'Ruins' | 'Warrens' | 'Weald' | 'Cove' = 'Ruins';
 	let length: 'Short' | 'Medium' | 'Long' = 'Short';
 
-	let provisions = area_manifest['cove'].provisions.filter(
+	$: provisions = area_manifest['cove'].provisions.filter(
 		(provision) => provision.length === length
 	);
 </script>
@@ -49,3 +49,17 @@
 </label>
 
 <h2>Provisions</h2>
+
+<p>Total cost : {provisions[0].total_cost}</p>
+
+<ul>
+	{#each provisions[0].items as { name, quantity, image }}
+		<li>
+            <div> 
+                <span>{name}</span>
+                <span>{quantity}</span>
+                <img alt="{name} asset" src="">
+            </div>
+        </li>
+	{/each}
+</ul>
