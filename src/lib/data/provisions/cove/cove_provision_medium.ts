@@ -1,15 +1,58 @@
 import type { provision } from '../../../../../types/provision.type';
 
 export const cove_provision_medium: provision = {
-	firewood: 1,
-	food: 18,
-	shovel: 5,
-	bandage: 4,
-	medicinal_herbs: 3,
-	skeleton_key: 2,
-	holy_water: 1,
-	torch: 13,
-	antivenom: 0,
+	total_cost: 5325,
 	length: 'Medium',
-	total_cost: 5325
+	items: [
+		{
+			name: 'Firewood',
+			quantity: 1,
+			image: '$lib/assets/items/firewood.png'
+		},
+		{
+			name: 'Food',
+			quantity: 12,
+			image: '$lib/assets/items/food_3.png'
+		},
+		{
+			name: 'Food',
+			quantity: 6,
+			image: '$lib/assets/items/food_2.png'
+		},
+		{
+			name: 'Shovel',
+			quantity: 5,
+			image: '$lib/assets/items/shovel.png'
+		},
+		{
+			name: 'Bandage',
+			quantity: 4,
+			image: '$lib/assets/items/bandage.png'
+		},
+		{
+			name: 'Medicinal Herbs',
+			quantity: 3,
+			image: '$lib/assets/items/medicinal_herbs.png'
+		},
+		{
+			name: 'Skeleton Key',
+			quantity: 2,
+			image: '$lib/assets/items/skeleton_key.png'
+		},
+		{
+			name: 'Holy Water',
+			quantity: 1,
+			image: '$lib/assets/items/holy_water.png'
+		},
+		{
+			name: 'Torch',
+			quantity: 8,
+			image: '$lib/assets/items/torch.png'
+		},
+		{
+			name: 'Torch',
+			quantity: 5,
+			image: '$lib/assets/items/torch.png'
+		}
+	]
 };
