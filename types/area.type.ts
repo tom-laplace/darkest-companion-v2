@@ -1,7 +1,8 @@
-import { curio } from "./curio.type";
+import { curio } from './curio.type';
+import { provision } from './provision.type';
 
 export type area = {
-    name: 'ruin' | 'warrens' | 'weald' | 'cove' | 'general',
-    length: 'short' | 'medium' | 'long', 
-    curios: curio[],
-}
+	name: 'Ruins' | 'Warrens' | 'Weald' | 'Cove';
+	curios: curio[];
+	provisions: provision[];
+};

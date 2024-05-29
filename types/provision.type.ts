@@ -1,5 +1,6 @@
 export type provision = {
 	total_cost: number;
+	length: 'Short' | 'Medium' | 'Long';
 	antivenom: number;
 	bandage: number;
 	firewood: number;

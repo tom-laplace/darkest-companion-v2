@@ -1,4 +1,4 @@
 export type item_quirk = {
-	image: 'string',
-	description: 'string'
+	image: string;
+	description: string[];
 };
