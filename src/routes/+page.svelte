@@ -52,16 +52,12 @@
 
 <p>Total cost : {provisions[0].total_cost}</p>
 
-<ul>
-	{#each provisions[0].items as { name, quantity, image }}
-		<li>
-			<div>
-				<span>{name}</span>
-				<span>{quantity}</span>
-				{#await import(`$lib/assets/items/${image}.png`) then { default: src }}
-					<img alt="{name} asset" {src} />
-				{/await}
-			</div>
+<ul class="grid grid-cols-8 gap-0">
+	{#each provisions[0].items as { name, image }}
+		<li class="m-0 p-0 box-border list-none">
+			{#await import(`$lib/assets/items/${image}.png`) then { default: src }}
+				<img alt="{name} asset" {src} class="block" />
+			{/await}
 		</li>
 	{/each}
 </ul>
