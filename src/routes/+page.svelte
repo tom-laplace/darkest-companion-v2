@@ -55,11 +55,13 @@
 <ul>
 	{#each provisions[0].items as { name, quantity, image }}
 		<li>
-            <div> 
-                <span>{name}</span>
-                <span>{quantity}</span>
-                <img alt="{name} asset" src="">
-            </div>
-        </li>
+			<div>
+				<span>{name}</span>
+				<span>{quantity}</span>
+				{#await import(`$lib/assets/items/${image}.png`) then { default: src }}
+					<img alt="{name} asset" {src} />
+				{/await}
+			</div>
+		</li>
 	{/each}
 </ul>

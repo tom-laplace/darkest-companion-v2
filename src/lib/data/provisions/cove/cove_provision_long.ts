@@ -7,57 +7,57 @@ export const cove_provision_long: provision = {
 		{
 			name: 'Firewood',
 			quantity: 1,
-			image: '$lib/assets/items/firewood.png'
+			image: 'firewood'
 		},
 		{
 			name: 'Firewood',
 			quantity: 1,
-			image: '$lib/assets/items/firewood.png'
+			image: 'firewood'
 		},
 		{
 			name: 'Food',
 			quantity: 12,
-			image: '$lib/assets/items/food_3.png'
+			image: 'food_3'
 		},
 		{
 			name: 'Food',
 			quantity: 8,
-			image: '$lib/assets/items/food_2.png'
+			image: 'food_2'
 		},
 		{
 			name: 'Shovel',
 			quantity: 6,
-			image: '$lib/assets/items/shovel.png'
+			image: 'shovel'
 		},
 		{
 			name: 'Bandage',
 			quantity: 6,
-			image: '$lib/assets/items/bandage.png'
+			image: 'bandage'
 		},
 		{
 			name: 'Medicinal Herbs',
 			quantity: 4,
-			image: '$lib/assets/items/medicinal_herbs.png'
+			image: 'medicinal_herbs'
 		},
 		{
 			name: 'Skeleton Key',
 			quantity: 3,
-			image: '$lib/assets/items/skeleton_key.png'
+			image: 'skeleton_key'
 		},
 		{
 			name: 'Holy Water',
 			quantity: 1,
-			image: '$lib/assets/items/holy_water.png'
+			image: 'holy_water'
 		},
 		{
 			name: 'Torch',
 			quantity: 8,
-			image: '$lib/assets/items/torch.png'
+			image: 'torch'
 		},
 		{
 			name: 'Torch',
 			quantity: 8,
-			image: '$lib/assets/items/torch.png'
+			image: 'torch'
 		}
 	]
 };
